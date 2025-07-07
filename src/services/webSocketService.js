@@ -54,7 +54,7 @@ export const connectWebSocket = (onMessage, onConnect, onDisconnect) => {
 
   // Determine WebSocket URL
   const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-  const wsBaseUrl = process.env.REACT_APP_WS_BASE_URL || `${wsProtocol}//${window.location.hostname}:8080`;
+  const wsBaseUrl = process.env.NEXT_PUBLIC_WS_BASE_URL || `${wsProtocol}//${window.location.hostname}:8080`;
   const wsUrl = `${wsBaseUrl}/ws?token=${token}`;
 
   try {

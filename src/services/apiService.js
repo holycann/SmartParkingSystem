@@ -5,7 +5,7 @@ import {
   isWebSocketConnected,
 } from './webSocketService';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8080/api';
 
 // Create an Axios instance
 const api = axios.create({
